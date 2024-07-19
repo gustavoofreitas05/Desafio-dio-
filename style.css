@@ -1,0 +1,227 @@
+/* Reset básico */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho com imagem de fundo fixa e gradiente */
+.banner {
+    position: relative;
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(47, 78, 110, 0.6)),
+        url('imagens/banner.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 500px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Cor de sobreposição com opacidade aumentada */
+    z-index: 0;
+}
+
+.banner-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.banner .logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Estilo do botão com fundo transparente */
+.banner button {
+    background-color: transparent;
+    border: 2px solid #062bff; /* Cor da borda */
+    color: #013cffb7; /* Cor do texto */
+    padding: 15px 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #0a7af1; 
+    color: #fff; 
+}
+
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 40px 20px;
+}
+
+#course-content {
+    background: #000;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(226, 225, 225, 0.1);
+}
+
+#course-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#course-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.module {
+    background: #252627;
+    color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module span {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Estilo da seção Transforme o Mundo */
+#transform-world {
+    background: 
+    url('imagens/woman-code.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: left;
+    padding: 80px 20px;
+    box-shadow: 0 10px 12px rgba(247, 247, 247, 0);
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+    min-height: 500px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+#transform-world .content {
+    position: relative;
+    z-index: 1;
+    text-align: left; 
+    max-width: 800px;
+}
+
+#transform-world h2 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 
+        -1px -1px 0 #ece5e5,  
+        1px -1px 0 #240eeb,
+        -1px 1px 0 #1a329c,
+        1px 1px 0 #000;
+}
+
+#transform-world p {
+    font-size: 1.5em; 
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+/* Estilo da seção Desafios Profissionais */
+#professional-challenges {
+    background: #000;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#professional-challenges h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#professional-challenges img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#professional-challenges p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer img.dio-logo {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
